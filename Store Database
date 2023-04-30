@@ -1,0 +1,20 @@
+CREATE TABLE supplements (id INTEGER PRIMARY KEY, supplement_name TEXT, brand_name TEXT, rating INTEGER, section TEXT, price INTEGER);
+
+INSERT INTO supplements VALUES (1, "Fish Oil", "Solgar", 1, "Omegas", 16.99);
+INSERT INTO supplements VALUES (2, "Raw Calcium", "Garden of Life", 2, "Minerals", 49.99);
+INSERT INTO supplements VALUES (3, "Complete BComplex", "Life Extension", 2, "BVitamins", 16.99);
+INSERT INTO supplements VALUES (4, "Vitamin C 1000mg", "Solgar", 4, "Vitmain C", 21.99);
+INSERT INTO supplements VALUES (5, "Raw C", "Garden of Life", 3, "Vitamin C", 31.99);
+INSERT INTO supplements VALUES (6, "Magnesium Glycinate", "Soloray", 4, "Minerals", 19.99);
+INSERT INTO supplements VALUES (7, "Raw Zinc", "Garden of Life", 3, "Minerals", "15.99");
+INSERT INTO supplements VALUES (8, "Potassium", "Soloray", 2, "Minerals", 21.99);
+INSERT INTO supplements VALUES (9, "Probiotics 100 Billion", "Garden of Life", 4, "Digestive Health", 47.99);
+INSERT INTO supplements VALUES (10, "Advanced Acidophilus Plus", "Solgar", 4, "Digestive Health", 18.99);
+INSERT INTO supplements VALUES (11, "Oceans 3", "Garden of Life", 5, "Omegas", 29.99);
+INSERT INTO supplements VALUES (12, "PQQ Caps", "Life Extension", 5, "Antioxidants", 9.99);
+INSERT INTO supplements VALUES (13, "Resveratrol", "Solgar", 4, "Antioxidants", 37.99);
+INSERT INTO supplements VALUES (14, "Alpha Lipoic Acid", "Solgar", 5, "Antioxidants", 20.99);
+INSERT INTO supplements VALUES (15, "Super Vitamin C", "Soloray", 5, "Vitamin C", 23.99);
+
+SELECT * FROM supplements ORDER BY price;
+SELECT * FROM supplements WHERE rating > 3 ORDER BY rating;
